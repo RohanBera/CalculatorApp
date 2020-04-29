@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" name="inp" id="inp" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" name="out" id="out" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="op" onclick="clr()" type="button" id="ac" name="ac" value="AC"></td>
+            <td colspan="2"><input class="op" onclick="del()" type="button" name="del" id="del" value="DEL"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="inp(this)" name="b7" id="b7" value="7"></td>
+            <td><input type="button" onclick="inp(this)" name="b8" id="b8" value="8"></td>
+            <td><input type="button" onclick="inp(this)" name="b9" id="b9" value="9"></td>
+            <td><input class="op" onclick="inpOp(this)" type="button" name="div" id="div" value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="inp(this)" name="b4" id="b4" value="4"></td>
+            <td><input type="button" onclick="inp(this)" name="b5" id="b5" value="5"></td>
+            <td><input type="button" onclick="inp(this)" name="b6" id="b6" value="6"></td>
+            <td><input class="op" onclick="inpOp(this)" type="button" name="mul" id="mul" value="*"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="inp(this)" name="b1" id="b1" value="1"></td>
+            <td><input type="button" onclick="inp(this)" name="b2" id="b2" value="2"></td>
+            <td><input type="button" onclick="inp(this)" name="b3" id="b3" value="3"></td>
+            <td><input class="op" onclick="inpOp(this)" type="button" name="min" id="min" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="inp(this)" name="dec" id="dec" value="."></td>
+            <td><input type="button" onclick="inp(this)" name="b0" id="b0" value="0"></td>
+            <td><input class="eq" onclick="calculate()" type="button" name="equ" id="equ" value="="></td>
+            <td><input class="op" onclick="inpOp(this)" type="button" name="add" id="add" value="+"></td>
+        </tr>
+    </table>
+</body>
+</html>

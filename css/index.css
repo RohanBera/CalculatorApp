@@ -1,0 +1,104 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ececec;
+}
+
+table {
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-collapse: collapse;
+    border: 3px solid gray;
+} 
+
+@media screen and (max-width:600px) {
+    table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 20px;
+    }
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    width: 25%;
+}
+
+input {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 800;
+    outline: none;
+
+    transition-duration: 800ms;
+}
+
+input[type=text] {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#inp {
+    color: grey;
+    font-size: 20px;
+    transition-duration: 800ms;
+    padding-bottom: 0px;
+}
+
+#out {
+    border-bottom: 1px solid #d3d3d3
+}
+
+input[type=button]:hover {
+    background-color: #9fff9f;
+}
+
+.op {
+    color: green;
+    font-weight: 900;
+}
+
+.eq {
+    color: white;
+    background-color: green;
+}
+
+.eq:hover {
+    color: green;
+}
+
+
+@media screen and (max-width:600px)
+{
+    input[type=button] {
+        transition-duration: 400ms;
+    }
+
+    input[type=button]:hover {
+        background-color: white;
+    }
+
+    .eq:hover {
+        color: green;
+    }    
+
+    input[type=button]:active {
+        background-color: #9fff9f;
+    }
+    
+
+}
